@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        .about, .portfolio, .contact {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact label {
+            margin-top: 10px;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I am janani, a frontend developer. Welcome to my portfolio page!</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>About Front-End Development</h2>
+        <p>Front-end development is a crucial aspect of web development that focuses on the user interface and user experience. It involves creating the visual and interactive elements of a website or web application using technologies like HTML, CSS, and JavaScript.</p>
+        <p>A front-end developer is responsible for ensuring that a website is visually appealing and user-friendly. They work closely with designers to implement their designs accurately, ensuring that the website looks great on all devices and screen sizes.</p>
+        <p>Key skills for a front-end developer include:</p>
+        <ul>
+            <li><strong>HTML:</strong> The standard markup language for creating web pages. It provides the structure of a website.</li>
+            <li><strong>CSS:</strong> Used to style and layout web pages. It allows developers to apply colors, fonts, and spacing to HTML elements.</li>
+            <li><strong>JavaScript:</strong> A programming language that enables interactive features on websites, such as animations, form validations, and dynamic content updates.</li>
+            <li><strong>Responsive Design:</strong> Ensuring that a website looks and functions well on various devices, from desktops to smartphones.</li>
+            <li><strong>Version Control:</strong> Tools like Git are essential for tracking changes and collaborating with other developers.</li>
+            <li><strong>Frameworks and Libraries:</strong> Knowledge of frameworks like React, Angular, or Vue.js can enhance a developer's efficiency and capability.</li>
+        </ul>
+        <p>Front-end development is ever-evolving, with new tools and technologies emerging regularly. Staying updated with the latest trends and continuously learning is key to being a successful front-end developer.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
